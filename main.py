@@ -5,8 +5,8 @@ from pytube import YouTube
 def action():
     link = video.get()
     video = YouTube(link)
-    download = video.streams.get_highest_resolution()
-    download.download()
+    doit = video.streams.get_highest_resolution()
+    doit.download()
 
 def popup():
     MessageBox.showinfo("GitHub Creator", "https://github.com/davdcsam")
